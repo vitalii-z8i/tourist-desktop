@@ -2,8 +2,11 @@
 # encoding: utf-8
 require 'rack/contrib/try_static'
 
-use Rack::TryStatic,
-  root: File.expand_path('../frontend', __FILE__),
-  urls: %w[/], try: ['index.html']
+root = File.expand_path('../frontend', __FILE__)
+use Rack::Static,
+  urls:   [/./],
+  root:   File.expand_path('../frontend', __FILE__),
+  index: 'index.html'
+
 
 run Rack::URLMap.new # "/api"=> API::Listing
