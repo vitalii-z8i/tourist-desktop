@@ -43,7 +43,7 @@ angular.module('directives', []).
               var newLng = google.maps.geometry.spherical.interpolate(
                       new google.maps.LatLng(place.coords.lat,place.coords.lng),
                       new google.maps.LatLng(neBounds.lat(), neBounds.lng()),
-                      0.35
+                      0.5
                     ).lng();
               $rootScope.map.panTo(new google.maps.LatLng(place.coords.lat, newLng));
               $rootScope.map.setZoom(10);

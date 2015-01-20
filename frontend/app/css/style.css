@@ -1,6 +1,6 @@
 html, body {
-  height: 100%;
   z-index: 1;
+  height: 100%;
 }
 .map-background {
   width: 100%;
@@ -13,12 +13,13 @@ html, body {
   z-index: 0;
 }
 .site-body {
-  margin-top: 52px;
   z-index: 10;
-  position: relative;
+  height: 100%;
+  width: 100%;
+  position: inherit;
 }
 .navbar-default {
-  background-color: rgba(0, 0, 0, 0.89);
+  background-color: rgba(0, 0, 0, 0.76);
   border-color: #000000;
 }
 .navbar-collapse, .navbar-default .navbar-form {
@@ -32,13 +33,20 @@ html, body {
   text-align: center;
 }
 .place-title {
+  margin-top: 52px;
   font-size: 45px;
   color: #000;
-  -webkit-text-stroke: 2px #F6F6F6;
+  -webkit-text-stroke: 1px #F6F6F6;
   font-weight: bold;
+
+  margin-left: 40px;
+  position: absolute;
 }
 .page {
-  width: 60%;
+  width: 50%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.89);
+  margin: 57px 0 5px 5px;
+  background-color: rgba(0, 0, 0, 0.76);
+  position: fixed;
+  right: 0;
 }

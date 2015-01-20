@@ -13,7 +13,6 @@ $touristDesktop.
       $scope.place = $scope.places.filter(function( place ) {
         return place.slug == $routeParams.placeSlug;
       })[0];
-      console.log($scope.place.name);
     }]).
   controller('CreatePlaceCtrl', ['$scope', '$rootScope',
     function($scope, $rootScope) {
